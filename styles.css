@@ -240,7 +240,7 @@ a:hover {
   min-height: min(72vh, 640px);
   display: flex;
   align-items: center;
-  padding: clamp(2.5rem, 6vw, 4.5rem) 1.25rem clamp(3rem, 8vw, 5rem);
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3rem, 8vw, 5rem);
   background: var(--color-purple);
 }
 
@@ -272,14 +272,20 @@ a:hover {
   );
 }
 
-.hero--billboard > * {
+.hero--billboard .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 3;
+  width: 100%;
+}
+
+.hero--billboard .confetti {
+  z-index: 2;
 }
 
 .hero-decor {
   position: absolute;
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero-decor--left {
@@ -549,6 +555,12 @@ a:hover {
   max-width: 42rem;
   margin: 0 0 2rem;
   font-size: 1.08rem;
+}
+
+.section--accent .section-intro--on-gold {
+  color: var(--color-ink);
+  font-weight: 700;
+  max-width: 46rem;
 }
 
 .feature-grid {
