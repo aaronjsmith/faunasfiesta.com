@@ -506,6 +506,66 @@ a:hover {
   padding: 0 1.25rem;
 }
 
+.container--narrow {
+  max-width: 720px;
+}
+
+.about-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  color: var(--color-magenta);
+  line-height: 1.25;
+  margin: 0 0 1.75rem;
+  text-align: center;
+}
+
+#about .section-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.about-prose {
+  font-size: 1.08rem;
+}
+
+.about-prose p {
+  margin: 0 0 1.25rem;
+}
+
+.about-prose p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-highlights {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.35rem;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  border: 3px solid var(--color-gold);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-highlights li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.5;
+}
+
+.about-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.about-highlights li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--color-teal);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 .section {
   padding: clamp(3rem, 8vw, 4.5rem) 0;
 }
@@ -625,59 +685,6 @@ a:hover {
 .shop-card p {
   margin: 0;
   color: var(--color-ink);
-}
-
-/* Split visit */
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-@media (max-width: 800px) {
-  .split {
-    grid-template-columns: 1fr;
-  }
-}
-
-.hours {
-  margin: 1.5rem 0 0;
-}
-
-.hours div {
-  margin-bottom: 1.25rem;
-}
-
-.hours dt {
-  font-weight: 800;
-  color: var(--color-purple);
-  margin-bottom: 0.25rem;
-}
-
-.hours dd {
-  margin: 0;
-}
-
-.fine-print {
-  font-size: 0.85rem;
-  opacity: 0.85;
-  margin-top: 1.5rem;
-}
-
-.map-placeholder {
-  min-height: 260px;
-  border-radius: var(--radius-blob);
-  background: linear-gradient(135deg, rgba(90, 58, 147, 0.08), rgba(0, 169, 157, 0.2));
-  border: 3px solid var(--color-purple);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-  font-weight: 800;
-  color: var(--color-purple);
-  box-shadow: var(--shadow-soft);
 }
 
 /* Contact */
